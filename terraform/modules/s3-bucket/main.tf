@@ -543,7 +543,7 @@ locals {
     ap-northeast-1 = "582318560864"
     ap-northeast-2 = "600734575887"
     ap-northeast-3 = "383597477331"
-    ap-southeast-1 = "114774131450"
+    ap-northeast-2 = "114774131450"
     ap-southeast-2 = "783225319266"
     ap-southeast-3 = "589379963580"
     ca-central-1   = "985666609251"

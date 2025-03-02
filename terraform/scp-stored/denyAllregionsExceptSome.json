@@ -13,7 +13,7 @@
         "Condition": {
           "StringNotEquals": {
             "aws:RequestedRegion": [
-              "ap-southeast-1",
+              "ap-northeast-2",
               "us-east-1",
               "ap-south-1"
             ]

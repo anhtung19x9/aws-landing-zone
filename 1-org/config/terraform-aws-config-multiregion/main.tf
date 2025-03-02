@@ -350,18 +350,18 @@ module "config" {
 # }
 
 # provider "aws" {
-#   alias  = "ap-southeast-1"
-#   region = "ap-southeast-1"
+#   alias  = "ap-northeast-2"
+#   region = "ap-northeast-2"
 # }
 
 # module "ap_southeast_1" {
 #   source  = "./terraform-aws-config"
 
-#   count = contains(var.enabled_regions, "ap-southeast-1") ? 1 : 0
+#   count = contains(var.enabled_regions, "ap-northeast-2") ? 1 : 0
 
 #   bucket_suffix               = var.bucket_suffix
 #   delivery_channel_name       = var.delivery_channel_name
-#   enable_global_logging       = contains(var.enabled_global_logging_regions, "ap-southeast-1")
+#   enable_global_logging       = contains(var.enabled_global_logging_regions, "ap-northeast-2")
 #   logging_bucket              = var.logging_bucket
 #   logging_prefix              = var.logging_prefix
 #   recorder_name               = var.recorder_name
@@ -370,7 +370,7 @@ module "config" {
 #   tags                        = var.tags
 
 #   providers = {
-#     aws = aws.ap-southeast-1
+#     aws = aws.ap-northeast-2
 #   }
 # }
 

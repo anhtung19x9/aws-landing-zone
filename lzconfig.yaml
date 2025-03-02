@@ -1,5 +1,5 @@
 global:
-  home_region: "ap-southeast-1"                          # Home region for AWS LZ deployment 
+  home_region: "ap-northeast-2"                          # Home region for AWS LZ deployment
   lz_state_bucket: "aws-lz-state-bucket"                 # Name for AWS LZ Terraform State bucket
   lz_state_locking_dynamodb_table: "aws-lz-state-lock"   # Name of DyanmoDB table for terraform state Locking
   switch_role_to_assume: "OrganizationAccountAccessRole" # Name of the Role to Assume to Deploy AWS LZ services in Accounts
@@ -15,7 +15,7 @@ bootstrap:
 org:
   common:
     target_regions:
-      - "ap-southeast-1"                                 # Region where you want to deploy AWS LZ [single region only]
+      - "ap-northeast-2"                                 # Region where you want to deploy AWS LZ [single region only]
     object_lock_enabled: false                           # Whether you want to enable Object Lock for all S3 Buckets in AWS LZ
     object_lock_conf:     
       default_retention_mode: "COMPLIANCE"               # Object Lock Retention Mode [Only applicable if object_lock_enabled is set to true ]
